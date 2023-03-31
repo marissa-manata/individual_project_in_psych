@@ -1,0 +1,23 @@
+/* AppComponent's private CSS styles */
+   
+/* Navbar container */
+.toolbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial;
+}
+  
+/* Links inside the navbar */
+.toolbar a {
+  float: left;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.toolbar a:hover {
+  background-color: rgb(255, 208, 0);
+  color: #333;
+}
