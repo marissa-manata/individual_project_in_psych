@@ -1,0 +1,16 @@
+<br>
+<button (click)="goBack()">Go Back</button>
+<br>
+<div *ngIf="topic" class="container">
+    <div class="text">
+        <h2>{{topic.name | uppercase}}</h2>
+        <ul>
+            <li *ngFor="let pub of topic.publications">
+                <div *ngIf="pub.bookbool; else notBook">{{pub.authors}} ({{pub.year}}). {{pub.article}} In {{pub.editors}} <i>{{pub.book}}</i>{{pub.pages}}. {{pub.publisher}}. <a href="{{pub.link}}">{{pub.link}}</a></div>
+                <ng-template #notBook>
+                    <div>{{pub.authors}} ({{pub.year}}). {{pub.article}} <i>{{pub.periodical}}, {{pub.volume}}</i>{{pub.issue}} {{pub.pages}} <a href="{{pub.link}}" target="_blank" rel="noopener noreferrer">{{pub.link}}</a></div>
+                </ng-template>
+            </li>
+        </ul>
+    </div> 
+</div>

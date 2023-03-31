@@ -1,0 +1,17 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.text {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+a:visited {
+    color: blue;
+}
