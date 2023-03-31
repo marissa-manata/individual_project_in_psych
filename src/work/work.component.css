@@ -1,0 +1,13 @@
+.how {
+    background-color: #333;
+    color: white;
+}
+
+.how h2 {
+    color: white;
+}
+
+.pic {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
