@@ -1,0 +1,54 @@
+/* MembersComponent's private CSS styles */
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.cardLink {
+  text-decoration: none;
+}
+
+.card h2 {
+  text-align: center;
+}
+
+img {
+  width: 150px;
+  height: 250px;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after {
+  content: "";
+  clear: both;
+  display: inline-block;
+}
+
+.title {
+  color: grey;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.column {
+  width: 250px;
+  margin-bottom: 16px;
+  padding: 0 8px;
+  float: left;
+  white-space: wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
