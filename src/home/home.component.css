@@ -1,0 +1,66 @@
+/* MissionComponent's private CSS styles */
+
+h2 {
+  text-align: center;
+}
+
+.pic {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.members-menu {
+  background-color: #333;
+}
+  
+p {
+  text-align: center;
+}
+  
+.members-menu-list {
+  padding: 0;
+  margin: auto;
+  max-width: 1000px;
+ 
+  /* flexbox */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: flex-start;
+  align-items: flex-start;
+}
+  
+a {
+  background-color: rgb(255, 208, 0);
+  border-radius: 2px;
+  padding: 1rem;
+  font-size: 1.2rem;
+  text-decoration: none;
+  display: inline-block;
+  color: #333;
+  text-align: center;
+  width: 100%;
+  min-width: 70px;
+  margin: .5rem auto;
+  box-sizing: border-box;
+  
+  /* flexbox */
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+}
+  
+@media (min-width: 600px) {
+  a {
+    width: 50%;
+    box-sizing: content-box;
+  }
+}
+  
+a:hover {
+  background-color: white;
+  color: black;
+}
+
+ 
