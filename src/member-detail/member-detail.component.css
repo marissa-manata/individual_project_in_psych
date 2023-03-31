@@ -1,0 +1,33 @@
+img {
+    width: 225px;
+    height: 250px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.image {
+    flex-basis: 40%;
+}
+
+.text {
+    padding-left: 20px;
+}
+
+.links {
+    display: block;
+    text-align: center;
+}
+
+.links a {
+    margin: .5em;
+    padding: .3em 0;
+    display: block;
+}
+
+.links a:visited {
+    color: blue;
+}

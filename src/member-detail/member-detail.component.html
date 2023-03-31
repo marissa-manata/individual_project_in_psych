@@ -1,0 +1,23 @@
+<br>
+<button (click)="goBack()">Go Back</button>
+<br>
+<div *ngIf="member" class="container">
+    <div class="image"><img src={{member.photoPath}}></div>
+    <div class="text">
+        <h2>{{member.name | uppercase}}</h2>
+        <div><h3>{{member.certs}}</h3></div>
+        <div>{{member.bio}}</div>
+    </div>   
+</div>
+<br>
+<div *ngIf="member" class="links">
+    <h3>External Links</h3>
+    <h4>Institutional</h4>
+    <div class="institutional"> 
+        <a href="{{member.externalLinks.institutional}}">{{member.externalLinks.institutional}}</a>
+    </div>
+    <h4>Research</h4>
+    <div class="research" *ngFor="let researchLink of member.externalLinks.research">
+        <a href="{{researchLink}}">{{researchLink}}</a>
+    </div>
+</div>
